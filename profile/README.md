@@ -1,51 +1,78 @@
-# AgentCures 💊🤖
-**Until every disease is cured.**
+<div align="center">
 
-AgentCures is building **agentic AI for drug discovery**—software that can navigate the R&D lifecycle end-to-end: generating hypotheses, proposing experiments, producing analyses, and accelerating the path from concept to clinic.
+# AgentCures
 
----
+**Agentic software for end-to-end drug discovery execution**
 
-## What we’re building
-### The First AI Agent in Pharma
-AgentCures is designed to **act** (not just answer): it can make decisions across the discovery workflow, suggest next steps, and help draft the documentation required to move programs forward.
+<a href="https://www.agentcures.com"><img alt="Website" src="https://img.shields.io/badge/website-agentcures.com-0A0A0A?style=for-the-badge"></a>
+<a href="https://github.com/agentcures"><img alt="GitHub Organization" src="https://img.shields.io/badge/github-agentcures-1F6FEB?style=for-the-badge"></a>
+<a href="https://github.com/agentcures?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-12-238636?style=for-the-badge"></a>
+<a href="https://github.com/agentcures/refua"><img alt="Core Toolkit" src="https://img.shields.io/badge/core-refua-BD561D?style=for-the-badge"></a>
 
-### Pharma as Code
-We treat **experiments, drug properties, and regulatory artifacts like software**:
-- Structured, reviewable work products
-- Version control and provenance
-- Human + AI collaboration through the same workflow
+</div>
 
-### AI–Human Collaboration
-AgentCures is built for teams. Scientists and engineers stay in the loop—reviewing assumptions, validating outputs, and guiding decisions where expertise matters most.
+AgentCures builds an integrated stack for planning, simulation, model inference, execution, evidence generation, and deployment in drug discovery programs.
 
-## Contributing
-We welcome thoughtful contributions—especially those that improve:
-- **Reproducibility** (deterministic runs, pinned environments, data lineage)
-- **Evaluation** (benchmarks, ablations, failure modes, red-teaming)
-- **Safety & oversight** (human-in-the-loop review, guardrails, auditing)
+## Platform Topology
 
-**Best practices we care about**
-- Clear experiment tracking + provenance
-- Tests for critical logic
-- Minimal, well-documented interfaces
-- Secure handling of secrets and sensitive data
+```mermaid
+flowchart TD
+    S[refua-studio] --> C[ClawCures]
+    C --> M[refua-mcp]
+    M --> R[refua]
+    R --> N[refua-notebook]
+    C --> D[refua-data]
+    C --> P[refua-preclinical]
+    C --> L[refua-clinical]
+    C --> G[refua-regulatory]
+    C --> B[refua-bench]
+    S --> G
+    S --> L
+    S --> P
+    S --> D
+    X[refua-deploy] --> S
+    X --> C
+    X --> M
+```
 
-## Responsible development
-Drug discovery and development are high-stakes. Contributions should prioritize:
-- Transparency of assumptions
-- Clear boundaries of model competence
-- Human review for consequential decisions
-- Strong documentation and traceability
+## Repository Map
 
----
+| Repository | Purpose | Key Features |
+| --- | --- | --- |
+| [`agentcures/.github`](https://github.com/agentcures/.github) | Organization profile and shared defaults | Profile README, org-level metadata |
+| [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | Campaign orchestration agent | OpenClaw planning, autonomous loops, policy checks, portfolio ranking |
+| [`agentcures/refua`](https://github.com/agentcures/refua) | Core drug discovery ML toolkit | Boltz2 fold/affinity, BoltzGen design, unified Python API |
+| [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | Typed MCP server for Refua tools | Structured tool contracts, fold/design/affinity, optional clinical and preclinical extras |
+| [`agentcures/refua-studio`](https://github.com/agentcures/refua-studio) | Web control plane | Mission planning, job telemetry, trial and evidence workflows |
+| [`agentcures/refua-data`](https://github.com/agentcures/refua-data) | Data layer | Curated catalogs, API ingestion, local caching, parquet materialization |
+| [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | Preclinical operations | GLP study planning, in vivo scheduling, bioanalysis pipelines |
+| [`agentcures/refua-clinical`](https://github.com/agentcures/refua-clinical) | Clinical simulation | PK/PD virtual patients, adaptive trial simulation, protocol optimization |
+| [`agentcures/refua-regulatory`](https://github.com/agentcures/refua-regulatory) | Regulatory evidence and audit | Decision lineage, signed bundles, checklist gates |
+| [`agentcures/refua-bench`](https://github.com/agentcures/refua-bench) | Benchmarking and regression gates | Statistical comparisons, provenance capture, baseline promotion |
+| [`agentcures/refua-notebook`](https://github.com/agentcures/refua-notebook) | Notebook visualization layer | Rich IPython and Jupyter rendering for Refua objects |
+| [`agentcures/refua-deploy`](https://github.com/agentcures/refua-deploy) | Deployment generation | Kubernetes/Compose/single-machine bundles for cloud and on-prem |
 
-## Partnerships
-Interested in **licensing** or **co-developing** a program with us?  
-Visit **agentcures.com** and reach out via the contact page.
+## Live Repository Cards
 
----
+| | |
+| --- | --- |
+| [![refua](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua&theme=transparent)](https://github.com/agentcures/refua) | [![ClawCures](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=ClawCures&theme=transparent)](https://github.com/agentcures/ClawCures) |
+| [![refua-mcp](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-mcp&theme=transparent)](https://github.com/agentcures/refua-mcp) | [![refua-studio](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-studio&theme=transparent)](https://github.com/agentcures/refua-studio) |
+| [![refua-data](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-data&theme=transparent)](https://github.com/agentcures/refua-data) | [![refua-preclinical](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-preclinical&theme=transparent)](https://github.com/agentcures/refua-preclinical) |
+| [![refua-clinical](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-clinical&theme=transparent)](https://github.com/agentcures/refua-clinical) | [![refua-regulatory](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-regulatory&theme=transparent)](https://github.com/agentcures/refua-regulatory) |
+| [![refua-bench](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-bench&theme=transparent)](https://github.com/agentcures/refua-bench) | [![refua-notebook](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-notebook&theme=transparent)](https://github.com/agentcures/refua-notebook) |
+| [![refua-deploy](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=refua-deploy&theme=transparent)](https://github.com/agentcures/refua-deploy) | [![.github](https://github-readme-stats.vercel.app/api/pin/?username=agentcures&repo=.github&theme=transparent)](https://github.com/agentcures/.github) |
 
-## Links
+## End-to-End Program Flow
+
+1. Define mission intent in `refua-studio` or `ClawCures`.
+2. Build candidate evidence through `refua`, `refua-mcp`, and `refua-data`.
+3. Simulate preclinical and clinical strategy with `refua-preclinical` and `refua-clinical`.
+4. Gate quality with `refua-bench`.
+5. Package traceable evidence with `refua-regulatory`.
+6. Render and apply runtime bundles with `refua-deploy`.
+
+## External Links
+
 - Website: https://www.agentcures.com
-- News & updates: https://agentcures.com/news
-
+- News: https://www.agentcures.com/news
