@@ -1,0 +1,11 @@
+event_id,timestamp_utc,program_id,stage,owner,action,input_artifact,output_artifact,gate_status,notes
+ev-0001,2026-03-01T09:00:00Z,kras-demo,target-definition,portfolio-team,define_objective,objective.md,objective_approved.json,passed,KRAS mission framed with burden and feasibility criteria
+ev-0002,2026-03-01T09:30:00Z,kras-demo,data-curation,data-team,materialize_dataset,chembl_activity_ki_human_request.json,chembl_activity_ki_human_manifest.json,passed,Dataset manifest captured with checksum and source metadata
+ev-0003,2026-03-01T10:05:00Z,kras-demo,design,ml-team,run_refua_fold,fold_request.json,fold_result.json,passed,Initial protein-ligand structure and confidence generated
+ev-0004,2026-03-01T10:20:00Z,kras-demo,design,ml-team,run_refua_affinity,affinity_request.json,affinity_result.json,passed,Affinity metrics attached to candidate set
+ev-0005,2026-03-01T10:40:00Z,kras-demo,orchestration,platform-team,run_clawcures_campaign,campaign_plan.json,kras_campaign_run.json,passed,Promising cures list and assessment text produced
+ev-0006,2026-03-01T11:15:00Z,kras-demo,preclinical,preclinical-team,run_preclinical_workup,default_study.json,preclinical_workup.json,passed,Study schedule and CMC planning artifacts generated
+ev-0007,2026-03-01T12:00:00Z,kras-demo,clinical,clinical-team,run_clinical_workup,default_config.yaml,clinical_workup_dir,passed,Protocol recommendation and VOI results produced
+ev-0008,2026-03-01T12:45:00Z,kras-demo,benchmark,qa-team,run_benchmark_compare,sample_suite.yaml,compare_report.json,passed,No statistically significant regression detected
+ev-0009,2026-03-01T13:30:00Z,kras-demo,regulatory,regulatory-team,build_evidence_bundle,kras_campaign_run.json,evidence_bundle_dir,manual_review,Checklist contains pending manual-review items
+ev-0010,2026-03-01T14:10:00Z,kras-demo,decision,leadership,stage_gate_review,evidence_bundle_dir,stage_gate_minutes.md,proceed,Proceed to focused follow-up campaign with narrowed candidate list

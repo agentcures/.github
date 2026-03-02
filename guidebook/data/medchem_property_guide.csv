@@ -1,0 +1,11 @@
+property,why_it_matters,what_to_watch,possible_tradeoff
+molecular_weight,impacts permeability and formulation complexity,very high values can increase optimization burden,lowering size may reduce potency if key interactions are lost
+lipophilicity_logP_or_logD,affects permeability protein binding and off-target risk,very high values may raise clearance and safety liabilities,reducing lipophilicity can lower membrane penetration
+hbond_donor_count,controls polarity and binding network,too many donors can hurt passive permeability,reducing donors may weaken binding geometry
+hbond_acceptor_count,affects binding and polarity profile,high acceptor counts may raise polar burden,reducing acceptors may reduce interaction options
+polar_surface_area,tracks membrane crossing tendencies,very high values can limit oral exposure,reducing polarity may increase nonspecific binding
+aqueous_solubility,controls assay quality and achievable exposure,poor solubility can distort potency readouts,increasing solubility can reduce membrane penetration
+metabolic_stability,maps likely clearance and dosing burden,rapid turnover can block exposure goals,improving stability may increase long half-life liabilities
+cyp_inhibition_risk,signals drug-drug interaction potential,strong CYP inhibition can limit clinical combinations,mitigating CYP may alter core scaffold potency
+herg_liability_risk,early proxy for QT-related concern,elevated risk demands careful follow-up,liability fixes can reduce potency or permeability
+synthetic_complexity,determines speed and scale feasibility,long multistep routes slow DMTA cycles,simplifying synthesis may reduce novelty
