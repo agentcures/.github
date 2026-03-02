@@ -9,10 +9,7 @@ It focuses on policy constraints, autonomous loop behavior, and the quality of c
 
 By the end of this chapter, you should be able to:
 
-- explain how ClawCures separates planning from execution
-- understand planner, policy, and tool-dispatch responsibilities
-- reason about autonomous loops and safety constraints
-- produce high-quality campaign artifacts for downstream teams
+Explain how ClawCures separates planning from execution. Understand planner, policy, and tool-dispatch responsibilities. Reason about autonomous loops and safety constraints. Produce high-quality campaign artifacts for downstream teams.
 
 ## Story Thread
 
@@ -26,11 +23,7 @@ This chapter explains how autonomy is made useful by policy, not by removing gua
 Its job is not to run every scientific model directly.
 Its job is to:
 
-- interpret mission objectives
-- obtain structured tool plans from OpenClaw
-- enforce policy and allowlists
-- dispatch typed calls through `refua-mcp`
-- synthesize outputs into campaign-level artifacts
+Interpret mission objectives. Obtain structured tool plans from OpenClaw. Enforce policy and allowlists. Dispatch typed calls through `refua-mcp`. Synthesize outputs into campaign-level artifacts.
 
 ## 4.2 Architectural Split
 
@@ -80,11 +73,7 @@ This requirement is central to reliable automation.
 
 Typical policy controls include:
 
-- tool allowlist checks
-- maximum call count
-- validation-first preference
-- dry-run and offline plan validation
-- optional autonomous-round limits
+Tool allowlist checks. Maximum call count. Validation-first preference. Dry-run and offline plan validation. Optional autonomous-round limits.
 
 These controls reduce bad plans, uncontrolled costs, and unsafe execution patterns.
 
@@ -105,20 +94,13 @@ flowchart TD
 
 Operational recommendation:
 
-- start with low round and call limits
-- inspect critique traces
-- expand autonomy only after stable behavior
+Start with low round and call limits. Inspect critique traces. Expand autonomy only after stable behavior.
 
 ## 4.7 Campaign Artifact Structure
 
 A useful campaign artifact usually includes:
 
-- objective and runtime metadata
-- planned and executed tool calls
-- raw and summarized tool outputs
-- promising-cure ranking entries
-- policy trace and critique context
-- warnings and unresolved risks
+Objective and runtime metadata. Planned and executed tool calls. Raw and summarized tool outputs. Promising-cure ranking entries. Policy trace and critique context. Warnings and unresolved risks.
 
 These fields make downstream preclinical/clinical/governance workflows much easier.
 
@@ -126,8 +108,7 @@ These fields make downstream preclinical/clinical/governance workflows much easi
 
 Portfolio ranking helps answer:
 
-- where should we invest scarce compute and team bandwidth first?
-- which disease programs have highest impact-adjusted feasibility?
+Where should we invest scarce compute and team bandwidth first? and which disease programs have highest impact-adjusted feasibility?
 
 Typical ranking factors include disease burden, technical feasibility, evidence depth, and operational tractability.
 
@@ -145,11 +126,7 @@ Typical ranking factors include disease burden, technical feasibility, evidence 
 
 Better campaign prompts:
 
-- specify objective scope and constraints
-- require measurable milestones
-- require typed tool call format
-- forbid unsupported claims
-- request explicit uncertainty reporting
+Specify objective scope and constraints. Require measurable milestones. Require typed tool call format. Forbid unsupported claims. Request explicit uncertainty reporting.
 
 Poor prompts cause low-signal plans and wasted cycles.
 
@@ -165,11 +142,7 @@ Before running a large campaign:
 
 ## Key Takeaways
 
-- `ClawCures` owns planning control and policy enforcement, not raw scientific execution.
-- Strict plan contracts prevent ambiguity and make automation reliable.
-- Autonomous loops require explicit limits, critique traces, and guardrails.
-- High-quality campaign artifacts must include both results and decision context.
-- Better objective framing usually yields better, lower-waste planning behavior.
+`ClawCures` owns planning control and policy enforcement, not raw scientific execution. Strict plan contracts prevent ambiguity and make automation reliable. Autonomous loops require explicit limits, critique traces, and guardrails. High-quality campaign artifacts must include both results and decision context. Better objective framing usually yields better, lower-waste planning behavior.
 
 ## Quick Review Questions
 
@@ -187,17 +160,14 @@ Before running a large campaign:
 
 **Result:** Call quality improves, invalid calls decrease, and compute spend aligns with planned campaign scope.
 
-**Lesson:** Policy controls are not friction; they are efficiency and safety mechanisms.
+**Lesson:** Policy controls are not friction. They are efficiency and safety mechanisms.
 
 ## 4.12 Chapter Checkpoint
 
 You are ready for Chapter 5 if you can answer:
 
-- where policy checks happen
-- why strict JSON plan contracts are non-negotiable
-- how campaign artifacts feed later stage modules
+Where policy checks happen. Why strict JSON plan contracts are non-negotiable. How campaign artifacts feed later stage modules.
 
 ## 4.13 Continue Reading
 
-- package interactions across the lifecycle: [Chapter 5](./chapter-05-program-lifecycle-modules.md)
-- governance and evidence quality gates: [Chapter 6](./chapter-06-quality-governance-and-evidence.md)
+Package interactions across the lifecycle: [Chapter 5](./chapter-05-program-lifecycle-modules.md) and governance and evidence quality gates: [Chapter 6](./chapter-06-quality-governance-and-evidence.md).

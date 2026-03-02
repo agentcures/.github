@@ -9,10 +9,7 @@ It shows how benchmark gates, evidence bundles, traceability, and manual-review 
 
 By the end of this chapter, you should be able to:
 
-- define what makes a campaign artifact auditable
-- apply benchmark and checklist gates consistently
-- design a traceability workflow that survives handoffs and review cycles
-- understand where uncertainty and manual review belong in decisions
+Define what makes a campaign artifact auditable. Apply benchmark and checklist gates consistently. Design a traceability workflow that survives handoffs and review cycles. Understand where uncertainty and manual review belong in decisions.
 
 ## Story Thread
 
@@ -27,9 +24,7 @@ If teams cannot reconstruct how a decision was produced, confidence collapses.
 
 Good governance answers:
 
-- what data and model produced this output?
-- what policy/gate checks were applied?
-- what risks remained unresolved when decision was made?
+What data and model produced this output? What policy/gate checks were applied? What risks remained unresolved when decision was made?
 
 ## 6.2 Three Pillars
 
@@ -40,19 +35,13 @@ flowchart LR
     C[Reviewable rationale] --> D
 ```
 
-- reproducibility: rerun pathways and metadata completeness
-- integrity: checksum and artifact immutability checks
-- reviewability: clear decisions linked to explicit evidence
+Reproducibility: rerun pathways and metadata completeness. Integrity: checksum and artifact immutability checks. Reviewability: clear decisions linked to explicit evidence.
 
 ## 6.3 Benchmark Gates With `refua-bench`
 
 `refua-bench` supports:
 
-- task-level benchmark suite definitions
-- baseline vs candidate comparisons
-- tolerance and effect-size rules
-- bootstrap confidence checks
-- safe baseline promotion flows
+Task-level benchmark suite definitions. Baseline vs candidate comparisons. Tolerance and effect-size rules. Bootstrap confidence checks. Safe baseline promotion flows.
 
 This prevents silent degradation when models or data change.
 
@@ -61,9 +50,7 @@ This prevents silent degradation when models or data change.
 Small numerical differences can be meaningless.
 Gating should distinguish:
 
-- meaningful regression
-- expected variance
-- inconclusive result requiring more data
+Meaningful regression. Expected variance. Inconclusive result requiring more data.
 
 Treating all deltas as equal leads to noisy, low-quality release decisions.
 
@@ -71,11 +58,7 @@ Treating all deltas as equal leads to noisy, low-quality release decisions.
 
 Evidence bundles usually include:
 
-- `manifest.json`
-- `decisions.jsonl`
-- `lineage.json`
-- `checksums.sha256`
-- checklist outputs
+`manifest.json`. `decisions.jsonl`. `lineage.json`. `checksums.sha256`. Checklist outputs.
 
 Verification then confirms integrity and completeness before review handoff.
 
@@ -97,26 +80,18 @@ Each arrow must be backed by an artifact reference, not memory.
 Use tabular mapping between decisions and evidence.
 Reference template:
 
-- [traceability_matrix.csv](./data/traceability_matrix.csv)
+[traceability_matrix.csv](./data/traceability_matrix.csv).
 
 Minimum fields to enforce in reviews:
 
-- decision ID
-- objective
-- input/output artifact refs
-- data and model provenance refs
-- benchmark status
-- checklist status
-- final decision and owner
+Decision ID. Objective. Input/output artifact refs. Data and model provenance refs. Benchmark status. Checklist status. Final decision and owner.
 
 ## 6.8 Manual Review Is A Feature, Not A Failure
 
 Some decisions should remain manual-review items.
 Examples:
 
-- unresolved safety interpretation
-- jurisdiction-specific regulatory interpretation
-- high-impact portfolio investment inflection
+Unresolved safety interpretation. Jurisdiction-specific regulatory interpretation. High-impact portfolio investment inflection.
 
 The right behavior is to track manual-review status explicitly, not hide it.
 
@@ -142,20 +117,11 @@ The right behavior is to track manual-review status explicitly, not hide it.
 
 Before approving advancement:
 
-- Are all critical tool calls typed and validated?
-- Are model versions and dependency snapshots attached?
-- Are data manifests and checksums included?
-- Are benchmark outcomes statistically interpretable?
-- Are manual-review items clearly identified and assigned?
-- Is final decision linked to explicit artifacts?
+Are all critical tool calls typed and validated? Are model versions and dependency snapshots attached? Are data manifests and checksums included? Are benchmark outcomes statistically interpretable? Are manual-review items clearly identified and assigned? Is final decision linked to explicit artifacts?
 
 ## Key Takeaways
 
-- Governance quality directly affects scientific decision quality.
-- Benchmark gates protect against silent performance regression.
-- Evidence bundles must be both complete and integrity-verifiable.
-- Manual review should be explicit, tracked, and assigned.
-- Decision traceability works only when artifacts are structured and stable.
+Governance quality directly affects scientific decision quality. Benchmark gates protect against silent performance regression. Evidence bundles must be both complete and integrity-verifiable. Manual review should be explicit, tracked, and assigned. Decision traceability works only when artifacts are structured and stable.
 
 ## Quick Review Questions
 
@@ -169,7 +135,7 @@ Before approving advancement:
 
 **Scenario:** A model update appears to improve a key metric, and stakeholders request immediate promotion.
 
-**Decision Move:** QA runs benchmark gating and detects performance uncertainty on high-priority tasks; regulatory review also finds missing checksum evidence.
+**Decision Move:** QA runs benchmark gating and detects performance uncertainty on high-priority tasks. Regulatory review also finds missing checksum evidence.
 
 **Result:** Promotion is paused, remediation tasks are assigned, and the next review packet is complete and defensible.
 
@@ -179,11 +145,8 @@ Before approving advancement:
 
 You are ready for Chapter 7 if you can answer:
 
-- what artifact set is required for your next review board
-- which gate can block progression automatically
-- what unresolved risk must remain manual-review today
+What artifact set is required for your next review board. Which gate can block progression automatically. What unresolved risk must remain manual-review today.
 
 ## 6.13 Continue Reading
 
-- deployment and runtime operations: [Chapter 7](./chapter-07-deployment-and-runtime-operations.md)
-- full applied flow: [Chapter 8](./chapter-08-end-to-end-walkthrough.md)
+Deployment and runtime operations: [Chapter 7](./chapter-07-deployment-and-runtime-operations.md) and full applied flow: [Chapter 8](./chapter-08-end-to-end-walkthrough.md).

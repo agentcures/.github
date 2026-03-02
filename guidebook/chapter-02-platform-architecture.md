@@ -9,10 +9,7 @@ It also provides a practical debugging model for isolating failures by layer ins
 
 By the end of this chapter, you should be able to:
 
-- describe how control, science, and governance layers are separated
-- trace a request from objective definition to evidence bundle
-- understand why strict typed contracts are central to reliability
-- identify where to debug issues when a workflow breaks
+Describe how control, science, and governance layers are separated. Trace a request from objective definition to evidence bundle. Understand why strict typed contracts are central to reliability. Identify where to debug issues when a workflow breaks.
 
 ## Story Thread
 
@@ -24,8 +21,7 @@ When those boundaries are clear, teams can move quickly without losing control.
 
 The ecosystem is built around one core principle:
 
-- plan with language reasoning
-- execute with typed deterministic interfaces
+Plan with language reasoning and execute with typed deterministic interfaces.
 
 That gives teams flexibility in strategy while preserving operational safety.
 
@@ -42,11 +38,7 @@ flowchart TD
 
 Concrete mapping:
 
-- control layer: `ClawCures`, `refua-studio`
-- execution layer: `refua-mcp`
-- science modules: `refua`, `refua-data`, `refua-wetlab`, `refua-preclinical`, `refua-clinical`
-- quality/governance: `refua-bench`, `refua-regulatory`
-- runtime packaging: `refua-deploy`
+Control layer: `ClawCures`, `refua-studio`. Execution layer: `refua-mcp`. Science modules: `refua`, `refua-data`, `refua-wetlab`, `refua-preclinical`, `refua-clinical`. Quality/governance: `refua-bench`, `refua-regulatory`. Runtime packaging: `refua-deploy`.
 
 ## 2.3 Topology Diagram
 
@@ -112,13 +104,9 @@ sequenceDiagram
 Loose text integration fails under scale.
 Strict contracts help with:
 
-- deterministic execution
-- predictable error handling
-- easier CI validation
-- easier security boundaries
-- easier reproducibility and audit review
+Deterministic execution. Predictable error handling. Easier CI validation. Easier security boundaries. Easier reproducibility and audit review.
 
-In this architecture, typed JSON is not a detail; it is the reliability foundation.
+In this architecture, typed JSON is not a detail. It is the reliability foundation.
 
 ## 2.7 Interface Boundaries
 
@@ -145,29 +133,17 @@ This diagnostic path shortens mean time to resolution.
 
 Minimum observability for each run:
 
-- objective and request metadata
-- plan payload and policy trace
-- per-tool call inputs/outputs (sanitized as needed)
-- run status transitions and timing
-- gate decisions and reviewer notes
+Objective and request metadata. Plan payload and policy trace. Per-tool call inputs/outputs (sanitized as needed). Run status transitions and timing. Gate decisions and reviewer notes.
 
 Without this, teams lose confidence and spend time on forensic debugging.
 
 ## 2.10 Architecture Design Principles Reused Everywhere
 
-- typed over ad hoc
-- explicit over implicit
-- reproducible over convenient
-- policy-constrained over unconstrained autonomy
-- stage-gated over optimistic progression
+Typed over ad hoc. Explicit over implicit. Reproducible over convenient. Policy-constrained over unconstrained autonomy. Stage-gated over optimistic progression.
 
 ## Key Takeaways
 
-- Planning and execution are intentionally separated to combine flexibility with safety.
-- Typed contracts are the operational backbone of reliability and reproducibility.
-- Layer boundaries make failures easier to isolate and fix quickly.
-- Governance and deployment are architecture components, not optional add-ons.
-- Observability must track objectives, calls, outputs, and gate outcomes together.
+Planning and execution are intentionally separated to combine flexibility with safety. Typed contracts are the operational backbone of reliability and reproducibility. Layer boundaries make failures easier to isolate and fix quickly. Governance and deployment are architecture components, not optional add-ons. Observability must track objectives, calls, outputs, and gate outcomes together.
 
 ## Quick Review Questions
 
@@ -192,11 +168,8 @@ They tighten prompt constraints and add plan-shape prevalidation.
 
 You are ready for Chapter 3 if you can explain:
 
-- why planning and execution are separated
-- where schema validation occurs
-- which layer owns quality gates
+Why planning and execution are separated. Where schema validation occurs. Which layer owns quality gates.
 
 ## 2.12 Continue Reading
 
-- core scientific engine internals: [Chapter 3](./chapter-03-refua-core-science-engine.md)
-- orchestration logic and policies: [Chapter 4](./chapter-04-clawcures-campaign-orchestrator.md)
+Core scientific engine internals: [Chapter 3](./chapter-03-refua-core-science-engine.md) and orchestration logic and policies: [Chapter 4](./chapter-04-clawcures-campaign-orchestrator.md).

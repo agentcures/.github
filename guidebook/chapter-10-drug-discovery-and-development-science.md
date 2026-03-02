@@ -9,10 +9,7 @@ It emphasizes evidence-backed progression and explicit uncertainty management.
 
 By the end of this chapter, you should be able to:
 
-- distinguish discovery success from development readiness
-- reason about translational science between preclinical and clinical stages
-- apply stage-gate logic with explicit evidence expectations
-- map major development-science tasks onto Refua ecosystem modules
+Distinguish discovery success from development readiness. Reason about translational science between preclinical and clinical stages. Apply stage-gate logic with explicit evidence expectations. Map major development-science tasks onto Refua ecosystem modules.
 
 ## Story Thread
 
@@ -49,10 +46,7 @@ A strong platform keeps this model explicit in data and workflow design.
 
 Before clinical advancement:
 
-- are exposure targets plausible for intended effect?
-- are safety margins and monitoring assumptions clear?
-- are endpoints/biomarkers aligned with mechanism?
-- does trial design handle heterogeneity and intercurrent events?
+Are exposure targets plausible for intended effect? Are safety margins and monitoring assumptions clear? Are endpoints/biomarkers aligned with mechanism? Does trial design handle heterogeneity and intercurrent events?
 
 `refua-clinical` provides simulation and protocol-design support for these questions.
 
@@ -60,22 +54,15 @@ Before clinical advancement:
 
 `refua-preclinical` supports planning and workups for:
 
-- GLP-style study planning constructs
-- operational schedules for in vivo activities
-- bioanalysis summaries
-- CMC planning outputs, batch records, stability assessments, release evaluation
+GLP-style study planning constructs. Operational schedules for in vivo activities. Bioanalysis summaries. CMC planning outputs, batch records, stability assessments, release evaluation.
 
-This does not replace domain experts; it structures repeatable decision support.
+This does not replace domain experts. It structures repeatable decision support.
 
 ## 10.5 Clinical Development Science
 
 Core clinical design science concerns:
 
-- sample-size adequacy under realistic uncertainty
-- interim and stopping strategy behavior
-- adaptive randomization effects
-- external-control borrowing assumptions
-- transportability risk when population shifts
+Sample-size adequacy under realistic uncertainty. Interim and stopping strategy behavior. Adaptive randomization effects. External-control borrowing assumptions. Transportability risk when population shifts.
 
 Simulation helps teams compare design options before expensive execution.
 
@@ -83,10 +70,7 @@ Simulation helps teams compare design options before expensive execution.
 
 CMC concerns include:
 
-- formulation feasibility
-- process consistency and control strategy
-- stability over lifecycle
-- release criteria with clear pass/hold logic
+Formulation feasibility. Process consistency and control strategy. Stability over lifecycle. Release criteria with clear pass/hold logic.
 
 Weak CMC planning can derail otherwise promising biology.
 
@@ -142,30 +126,19 @@ This prevents hindsight bias and improves institutional learning.
 
 ## 10.11 Common Development Mistakes
 
-- advancing on enthusiasm without gate completeness
-- underweighting CMC readiness early
-- presenting single-point predictions without uncertainty ranges
-- poor integration between wet-lab operations and governance artifacts
+Advancing on enthusiasm without gate completeness. Underweighting CMC readiness early. Presenting single-point predictions without uncertainty ranges. Poor integration between wet-lab operations and governance artifacts.
 
 ## 10.12 Accessible Science Communication Pattern
 
 To make complex development science readable:
 
-- define each decision question explicitly
-- show evidence tables before conclusions
-- separate known facts from assumptions
-- include plain-language risk summary
-- include concrete next-step experiment or analysis
+Define each decision question explicitly. Show evidence tables before conclusions. Separate known facts from assumptions. Include plain-language risk summary. Include concrete next-step experiment or analysis.
 
 This style improves cross-functional alignment.
 
 ## Key Takeaways
 
-- Discovery success and development readiness are different thresholds.
-- Stage-gate progression requires evidence completeness, not momentum.
-- Translational design quality depends on explicit assumptions and scenario testing.
-- CMC readiness is a core development constraint, not a late add-on.
-- Clear decision hygiene improves both speed and defensibility.
+Discovery success and development readiness are different thresholds. Stage-gate progression requires evidence completeness, not momentum. Translational design quality depends on explicit assumptions and scenario testing. CMC readiness is a core development constraint, not a late add-on. Clear decision hygiene improves both speed and defensibility.
 
 ## Quick Review Questions
 
@@ -189,11 +162,8 @@ This style improves cross-functional alignment.
 
 You completed this guidebook core if you can explain:
 
-- what separates discovery success from development readiness
-- what evidence is required for your next stage-gate review
-- which uncertainty is currently highest-value to reduce next
+What separates discovery success from development readiness. What evidence is required for your next stage-gate review. Which uncertainty is currently highest-value to reduce next.
 
 ## 10.14 Continue Reading
 
-- glossary for quick term alignment: [Appendix A](./appendix-a-glossary.md)
-- artifact contracts and schema examples: [Appendix B](./appendix-b-artifacts-and-schemas.md)
+Glossary for quick term alignment: [Appendix A](./appendix-a-glossary.md) and artifact contracts and schema examples: [Appendix B](./appendix-b-artifacts-and-schemas.md).

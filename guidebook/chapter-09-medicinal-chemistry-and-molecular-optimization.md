@@ -9,10 +9,7 @@ It links chemistry decision-making directly to Refua-supported computational tri
 
 By the end of this chapter, you should be able to:
 
-- explain medicinal chemistry as a multi-constraint optimization discipline
-- run a practical SAR-driven DMTA cycle
-- evaluate potency, selectivity, ADMET, and developability together
-- connect chemistry decisions to Refua and ClawCures workflows
+Explain medicinal chemistry as a multi-constraint optimization discipline. Run a practical SAR-driven DMTA cycle. Evaluate potency, selectivity, ADMET, and developability together. Connect chemistry decisions to Refua and ClawCures workflows.
 
 ## Story Thread
 
@@ -37,10 +34,7 @@ flowchart LR
     A --> D
 ```
 
-- Design: choose modifications and hypotheses
-- Make: synthesize or procure analogs
-- Test: run biochemical/cellular/ADMET assays
-- Analyze: update SAR and choose next moves
+Design: choose modifications and hypotheses. Make: synthesize or procure analogs. Test: run biochemical/cellular/ADMET assays. Analyze: update SAR and choose next moves.
 
 This loop repeats until a series is advanced or stopped.
 
@@ -87,30 +81,21 @@ Reference file: [medchem_property_guide.csv](./data/medchem_property_guide.csv)
 Potency is not enough.
 Efficiency metrics help normalize quality.
 
-- ligand efficiency (LE): potency relative to molecular size
-- lipophilic ligand efficiency (LLE/LipE): potency relative to lipophilicity
+Ligand efficiency (LE): potency relative to molecular size and lipophilic ligand efficiency (LLE/LipE): potency relative to lipophilicity.
 
 These metrics help avoid "large lipophilic potency traps."
 
 ## 9.7 Common Medicinal Chemistry Strategies
 
-- bioisosteric replacement for liability relief
-- ring constraints for conformational control
-- polarity tuning for exposure balance
-- soft-spot blocking to improve metabolic stability
-- scaffold simplification for synthetic tractability
+Bioisosteric replacement for liability relief. Ring constraints for conformational control. Polarity tuning for exposure balance. Soft-spot blocking to improve metabolic stability. Scaffold simplification for synthetic tractability.
 
-No strategy is universally correct; context decides.
+No strategy is universally correct. Context decides.
 
 ## 9.8 Early Liability Management
 
 High-value early checks:
 
-- reactive motifs and chemical instability
-- likely assay-interference motifs
-- CYP inhibition concern signals
-- hERG concern trends
-- genotoxicity concern flags
+Reactive motifs and chemical instability. Likely assay-interference motifs. CYP inhibition concern signals. HERG concern trends. Genotoxicity concern flags.
 
 Catching these early saves substantial downstream cost.
 
@@ -130,9 +115,7 @@ Decision should be series-based, not compound-of-the-week based.
 
 `refua` can support chemistry decision loops by providing:
 
-- structural context for interaction hypotheses
-- affinity-oriented scoring signals
-- molecule property and optional ADMET profile context
+Structural context for interaction hypotheses. Affinity-oriented scoring signals. Molecule property and optional ADMET profile context.
 
 `ClawCures` can then orchestrate iteration plans and capture ranking artifacts.
 
@@ -146,31 +129,19 @@ Decision should be series-based, not compound-of-the-week based.
 
 ## 9.12 Medicinal Chemistry Anti-Patterns
 
-- optimizing one metric at the expense of all others
-- making too many structural changes between iterations
-- ignoring synthetic route realism until late
-- trusting single-assay outcomes without replication
+Optimizing one metric at the expense of all others. Making too many structural changes between iterations. Ignoring synthetic route realism until late. Trusting single-assay outcomes without replication.
 
 ## 9.13 Readable Reporting Template
 
 For each series review:
 
-- series hypothesis
-- structural change set
-- potency and selectivity trend summary
-- ADMET/developability trend summary
-- key risks and mitigation options
-- explicit go/iterate/stop recommendation
+Series hypothesis. Structural change set. Potency and selectivity trend summary. ADMET/developability trend summary. Key risks and mitigation options. Explicit go/iterate/stop recommendation.
 
 Consistency in reporting improves decision speed and quality.
 
 ## Key Takeaways
 
-- Medicinal chemistry success requires balancing potency, safety, exposure, and developability.
-- DMTA loops work best when hypothesis changes are disciplined and measurable.
-- Property heuristics guide direction but do not replace experimental evidence.
-- Series-level decisions are stronger than one-compound decision habits.
-- Structured reporting makes cross-functional decisions faster and clearer.
+Medicinal chemistry success requires balancing potency, safety, exposure, and developability. DMTA loops work best when hypothesis changes are disciplined and measurable. Property heuristics guide direction but do not replace experimental evidence. Series-level decisions are stronger than one-compound decision habits. Structured reporting makes cross-functional decisions faster and clearer.
 
 ## Quick Review Questions
 
@@ -194,11 +165,8 @@ Consistency in reporting improves decision speed and quality.
 
 You are ready for Chapter 10 if you can answer:
 
-- what tradeoff currently blocks your top series
-- which two experiments would reduce uncertainty most per week of work
-- what evidence threshold defines a "development-ready" handoff
+What tradeoff currently blocks your top series. Which two experiments would reduce uncertainty most per week of work. What evidence threshold defines a "development-ready" handoff.
 
 ## 9.15 Continue Reading
 
-- broader development-stage science and gates: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md)
-- lifecycle integration and ownership: [Chapter 5](./chapter-05-program-lifecycle-modules.md)
+Broader development-stage science and gates: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md) and lifecycle integration and ownership: [Chapter 5](./chapter-05-program-lifecycle-modules.md).

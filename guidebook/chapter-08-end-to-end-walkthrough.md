@@ -9,10 +9,7 @@ It is designed as a repeatable operational template for real team workflows.
 
 By the end of this chapter, you should be able to:
 
-- run a practical objective from planning through evidence packaging
-- know which artifacts appear at each stage
-- recognize where to add quality checks before advancement
-- produce a reproducible decision packet for stakeholders
+Run a practical objective from planning through evidence packaging. Know which artifacts appear at each stage. Recognize where to add quality checks before advancement. Produce a reproducible decision packet for stakeholders.
 
 ## Story Thread
 
@@ -44,9 +41,7 @@ flowchart LR
 
 Minimum services:
 
-- OpenClaw gateway
-- `refua-mcp`
-- optional `refua-studio` for command-center workflows
+OpenClaw gateway. `refua-mcp`. Optional `refua-studio` for command-center workflows.
 
 Checklist before first run:
 
@@ -75,17 +70,11 @@ What happens internally:
 
 Open and inspect key sections:
 
-- objective and configuration
-- planned vs executed calls
-- tool output summaries
-- `promising_cures` rankings and assessment text
-- warnings and policy traces
+Objective and configuration. Planned vs executed calls. Tool output summaries. `promising_cures` rankings and assessment text. Warnings and policy traces.
 
 Quick quality check:
 
-- Do rankings include both upside and risk context?
-- Are unresolved uncertainties explicit?
-- Are references to tools/artifacts present?
+Do rankings include both upside and risk context? Are unresolved uncertainties explicit? Are references to tools/artifacts present?
 
 ## 8.6 Step 4: Run Preclinical Workup
 
@@ -97,10 +86,7 @@ refua-preclinical workup \
 
 Expected value:
 
-- study planning details
-- operational scheduling structure
-- bioanalysis summary (if provided inputs)
-- CMC planning context for downstream readiness
+Study planning details. Operational scheduling structure. Bioanalysis summary (if provided inputs). CMC planning context for downstream readiness.
 
 ## 8.7 Step 5: Run Clinical Workup
 
@@ -112,10 +98,7 @@ refua-clinical workup \
 
 Expected value:
 
-- simulated operating characteristics
-- protocol recommendation options
-- optimization/VOI-style guidance
-- narrative advice with explicit assumptions
+Simulated operating characteristics. Protocol recommendation options. Optimization/VOI-style guidance. Narrative advice with explicit assumptions.
 
 ## 8.8 Step 6: Apply Benchmark Gate
 
@@ -129,9 +112,7 @@ refua-bench compare \
 
 Interpretation guidance:
 
-- pass: candidate acceptable relative to baseline criteria
-- fail: block promotion and investigate
-- uncertain: gather additional evidence or adjust design intentionally
+Pass: candidate acceptable relative to baseline criteria. Fail: block promotion and investigate. Uncertain: gather additional evidence or adjust design intentionally.
 
 ## 8.9 Step 7: Build And Verify Evidence Bundle
 
@@ -146,22 +127,13 @@ refua-regulatory verify \
 
 Review expected bundle contents:
 
-- manifest
-- decisions
-- lineage
-- checksums
-- checklist outputs
+Manifest. Decisions. Lineage. Checksums. Checklist outputs.
 
 ## 8.10 Step 8: Stage-Gate Review Packet
 
 Before review meeting, assemble:
 
-- objective and scope
-- key results and ranking rationale
-- preclinical and clinical decision summaries
-- benchmark gate status
-- evidence verification status
-- unresolved risks and proposed next experiments
+Objective and scope. Key results and ranking rationale. Preclinical and clinical decision summaries. Benchmark gate status. Evidence verification status. Unresolved risks and proposed next experiments.
 
 This packet should be readable by both technical and non-technical stakeholders.
 
@@ -177,20 +149,13 @@ This packet should be readable by both technical and non-technical stakeholders.
 
 ## 8.12 Common Walkthrough Failure Points
 
-- objective too broad, producing low-focus plans
-- skipping validation-first patterns
-- incomplete artifact capture before review
-- unclear ownership of final stage-gate decision
+Objective too broad, producing low-focus plans. Skipping validation-first patterns. Incomplete artifact capture before review. Unclear ownership of final stage-gate decision.
 
 Treat these as process defects and fix them before scaling campaign volume.
 
 ## Key Takeaways
 
-- End-to-end quality depends on consistency across every handoff, not just one stage.
-- Artifact completeness is as important as model output quality.
-- Benchmark and governance gates should be integrated before review meetings.
-- A reusable decision packet structure accelerates cross-functional alignment.
-- Repeatable walkthroughs are the fastest path to operational maturity.
+End-to-end quality depends on consistency across every handoff, not just one stage. Artifact completeness is as important as model output quality. Benchmark and governance gates should be integrated before review meetings. A reusable decision packet structure accelerates cross-functional alignment. Repeatable walkthroughs are the fastest path to operational maturity.
 
 ## Quick Review Questions
 
@@ -204,7 +169,7 @@ Treat these as process defects and fix them before scaling campaign volume.
 
 **Scenario:** A team completes a full KRAS campaign run but enters stage-gate review without benchmark output or verified evidence bundle.
 
-**Decision Move:** The review is paused; the team executes the missing compare and bundle-verify steps, then regenerates the decision packet.
+**Decision Move:** The review is paused. The team executes the missing compare and bundle-verify steps, then regenerates the decision packet.
 
 **Result:** The second review is shorter and more decisive because every claim is traceable to validated artifacts.
 
@@ -212,18 +177,12 @@ Treat these as process defects and fix them before scaling campaign volume.
 
 ## 8.13 Quick Self-Audit
 
-- Can another team rerun this workflow from artifacts alone?
-- Are decision boundaries documented clearly?
-- Are uncertainties explicit and prioritized?
-- Is there a concrete next-loop plan if decision is "rework"?
+Can another team rerun this workflow from artifacts alone? Are decision boundaries documented clearly? Are uncertainties explicit and prioritized? Is there a concrete next-loop plan if decision is "rework"?
 
 ## 8.14 Continue Into Domain Deep Dives
 
-- medicinal chemistry and SAR strategy: [Chapter 9](./chapter-09-medicinal-chemistry-and-molecular-optimization.md)
-- discovery-to-development stage science: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md)
+Medicinal chemistry and SAR strategy: [Chapter 9](./chapter-09-medicinal-chemistry-and-molecular-optimization.md) and discovery-to-development stage science: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md).
 
 ## 8.15 Structured Reference Files
 
-- [tool_calls_example.json](./data/tool_calls_example.json)
-- [campaign_lifecycle_example.csv](./data/campaign_lifecycle_example.csv)
-- [traceability_matrix.csv](./data/traceability_matrix.csv)
+[tool_calls_example.json](./data/tool_calls_example.json). [campaign_lifecycle_example.csv](./data/campaign_lifecycle_example.csv). [traceability_matrix.csv](./data/traceability_matrix.csv).

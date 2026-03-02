@@ -9,10 +9,7 @@ It emphasizes ownership clarity, schema discipline, and gate-aware handoffs.
 
 By the end of this chapter, you should be able to:
 
-- map each package to concrete stage responsibilities
-- understand how artifacts flow from one module to the next
-- identify where stage transitions need explicit quality gates
-- design cross-team workflows that stay reproducible
+Map each package to concrete stage responsibilities. Understand how artifacts flow from one module to the next. Identify where stage transitions need explicit quality gates. Design cross-team workflows that stay reproducible.
 
 ## Story Thread
 
@@ -68,11 +65,7 @@ Good hand-offs are explicit and machine-readable.
 `refua-studio` is where teams coordinate lifecycle operations in one place.
 It unifies:
 
-- campaign planning/execution
-- data catalog operations
-- wet-lab workflows
-- preclinical and clinical workflows
-- benchmarking and evidence bundling
+Campaign planning/execution. Data catalog operations. Wet-lab workflows. Preclinical and clinical workflows. Benchmarking and evidence bundling.
 
 This reduces context switching and keeps stage transitions visible.
 
@@ -80,12 +73,7 @@ This reduces context switching and keeps stage transitions visible.
 
 A practical ownership pattern:
 
-- platform team: orchestration reliability and contracts
-- modeling team: structure/affinity/design workflows
-- wet-lab team: protocol execution and sample lineage
-- preclinical team: study and CMC planning outputs
-- clinical team: protocol simulation and decision framing
-- QA/regulatory team: evidence integrity and gate compliance
+Platform team: orchestration reliability and contracts. Modeling team: structure/affinity/design workflows. Wet-lab team: protocol execution and sample lineage. Preclinical team: study and CMC planning outputs. Clinical team: protocol simulation and decision framing. QA/regulatory team: evidence integrity and gate compliance.
 
 Clear ownership avoids hidden accountability gaps.
 
@@ -103,8 +91,7 @@ flowchart TD
 
 Design implication:
 
-- every stage should produce artifacts that can be reviewed independently
-- no stage should rely only on verbal transfer of conclusions
+Every stage should produce artifacts that can be reviewed independently and no stage should rely only on verbal transfer of conclusions.
 
 ## 5.7 Data Quality And Schema Discipline
 
@@ -128,27 +115,19 @@ Prevent it by:
 
 ## 5.9 Common Lifecycle Anti-Patterns
 
-- ad hoc one-off scripts outside typed interfaces
-- manual artifact editing without lineage events
-- skipping benchmark gates under schedule pressure
-- large stage transitions with unclear ownership
+Ad hoc one-off scripts outside typed interfaces. Manual artifact editing without lineage events. Skipping benchmark gates under schedule pressure. Large stage transitions with unclear ownership.
 
 These issues compound quickly as programs scale.
 
 ## 5.10 Reference Data In This Guidebook
 
-- lifecycle events: [campaign_lifecycle_example.csv](./data/campaign_lifecycle_example.csv)
-- decision traceability: [traceability_matrix.csv](./data/traceability_matrix.csv)
+Lifecycle events: [campaign_lifecycle_example.csv](./data/campaign_lifecycle_example.csv) and decision traceability: [traceability_matrix.csv](./data/traceability_matrix.csv).
 
 Use these files as templates when creating internal reporting pipelines.
 
 ## Key Takeaways
 
-- Lifecycle reliability depends on explicit module boundaries and artifact contracts.
-- Studio improves coordination, but domain modules remain source-of-truth for execution.
-- Stage transitions should be data-backed and ownership-backed, not conversational.
-- Schema discipline is essential for scaling multi-team workflows.
-- Gate outcomes should be integrated into everyday operations, not end-stage paperwork.
+Lifecycle reliability depends on explicit module boundaries and artifact contracts. Studio improves coordination, but domain modules remain source-of-truth for execution. Stage transitions should be data-backed and ownership-backed, not conversational. Schema discipline is essential for scaling multi-team workflows. Gate outcomes should be integrated into everyday operations, not end-stage paperwork.
 
 ## Quick Review Questions
 
@@ -172,12 +151,8 @@ Use these files as templates when creating internal reporting pipelines.
 
 You are ready for Chapter 6 if you can answer:
 
-- which artifact is required before your next stage transition
-- who owns each gate in your workflow
-- where schema validation is currently enforced
+Which artifact is required before your next stage transition. Who owns each gate in your workflow. Where schema validation is currently enforced.
 
 ## 5.12 Continue Reading
 
-- quality and governance deep dive: [Chapter 6](./chapter-06-quality-governance-and-evidence.md)
-- medicinal chemistry depth for design loops: [Chapter 9](./chapter-09-medicinal-chemistry-and-molecular-optimization.md)
-- development science stage strategy: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md)
+Quality and governance deep dive: [Chapter 6](./chapter-06-quality-governance-and-evidence.md). Medicinal chemistry depth for design loops: [Chapter 9](./chapter-09-medicinal-chemistry-and-molecular-optimization.md). Development science stage strategy: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md).
