@@ -15,10 +15,7 @@ AgentCures builds an integrated stack for planning, simulation, model inference,
 
 ## Guidebook
 
-For a full textbook-style walkthrough of the ecosystem, start here:
-
-- [`agentcures/.github/guidebook`](https://github.com/agentcures/.github/tree/main/guidebook)
-- Direct index: [`guidebook/README.md`](https://github.com/agentcures/.github/blob/main/guidebook/README.md)
+[Click to read the Guidebook](https://github.com/agentcures/.github/tree/main/guidebook)
 
 ## Platform Topology
 
