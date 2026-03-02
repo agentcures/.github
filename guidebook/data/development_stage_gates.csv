@@ -1,0 +1,8 @@
+stage,primary_question,minimum_evidence,typical_modules,gate_outcome
+hit_to_lead,do we have a credible chemical starting point,reproducible activity trends and basic liability screen,refua and refua-mcp plus wetlab,advance_or_iterate
+lead_optimization,is the series balanced enough for preclinical work,potency selectivity ADMET and developability trend package,refua plus refua-preclinical and ClawCures,advance_or_iterate
+preclinical_readiness,can we support first in human planning,study plans PK safety margins and CMC planning outputs,refua-preclinical and refua-wetlab,advance_or_hold
+clinical_design_readiness,does the trial strategy have acceptable operating characteristics,simulation outputs protocol options and VOI analyses,refua-clinical and refua-studio,advance_or_rework
+model_release_quality,are model updates safe for decision workflows,benchmark comparison with tolerances and uncertainty checks,refua-bench,pass_or_block
+regulatory_evidence_readiness,is the decision package auditable and complete,lineage decisions checksums and checklist completion,refua-regulatory,proceed_or_manual_review
+program_stage_gate,should the program move to next investment level,integrated packet across scientific operational and governance evidence,refua-studio plus leadership review,proceed_or_stop

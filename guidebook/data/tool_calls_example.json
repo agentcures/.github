@@ -1,0 +1,64 @@
+{
+  "campaign_example": {
+    "objective": "Design and prioritize KRAS campaign strategies",
+    "calls": [
+      {
+        "tool": "refua_validate_spec",
+        "args": {
+          "action": "fold",
+          "entities": [
+            {
+              "type": "protein",
+              "id": "A",
+              "sequence": "MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQ"
+            },
+            {
+              "type": "ligand",
+              "id": "lig",
+              "smiles": "CCO"
+            }
+          ]
+        }
+      },
+      {
+        "tool": "refua_fold",
+        "args": {
+          "name": "protein_ligand",
+          "entities": [
+            {
+              "type": "protein",
+              "id": "A",
+              "sequence": "MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQ"
+            },
+            {
+              "type": "ligand",
+              "id": "lig",
+              "smiles": "CCO"
+            }
+          ],
+          "affinity": {"binder": "lig"},
+          "admet": true
+        }
+      },
+      {
+        "tool": "refua_preclinical_workup",
+        "args": {
+          "study_config": {
+            "program_id": "kras-demo",
+            "species": ["rat", "dog"],
+            "dose_levels_mg_per_kg": [1, 3, 10]
+          }
+        }
+      },
+      {
+        "tool": "refua_clinical_simulator",
+        "args": {
+          "config": {
+            "trial": {"phase": "Phase II", "total_n": 220},
+            "adaptive": {"enabled": true, "interim_every": 20}
+          }
+        }
+      }
+    ]
+  }
+}
