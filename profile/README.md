@@ -40,7 +40,6 @@ flowchart TD
 
 | Repository | Purpose | Key Features |
 | --- | --- | --- |
-| [`agentcures/.github`](https://github.com/agentcures/.github) | Organization profile and shared defaults | Profile README, org-level metadata |
 | [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | Campaign orchestration agent | OpenClaw planning, autonomous loops, policy checks, portfolio ranking |
 | [`agentcures/refua`](https://github.com/agentcures/refua) | Core drug discovery ML toolkit | Boltz2 fold/affinity, BoltzGen design, unified Python API |
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | Typed MCP server for Refua tools | Structured tool contracts, fold/design/affinity, optional clinical and preclinical extras |
@@ -70,7 +69,6 @@ flowchart TD
 | [`agentcures/refua-bench`](https://github.com/agentcures/refua-bench) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-bench?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-bench?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-bench?style=flat-square) |
 | [`agentcures/refua-notebook`](https://github.com/agentcures/refua-notebook) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-notebook?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-notebook?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-notebook?style=flat-square) |
 | [`agentcures/refua-deploy`](https://github.com/agentcures/refua-deploy) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-deploy?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-deploy?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-deploy?style=flat-square) |
-| [`agentcures/.github`](https://github.com/agentcures/.github) | ![Stars](https://img.shields.io/github/stars/agentcures/.github?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/.github?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/.github?style=flat-square) |
 
 ## End-to-End Program Flow
 
