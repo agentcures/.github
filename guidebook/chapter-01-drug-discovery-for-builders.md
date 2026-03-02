@@ -9,10 +9,7 @@ It explains why programs fail, how multi-objective tradeoffs shape decisions, an
 
 By the end of this chapter, you should be able to:
 
-- explain the full discovery-to-development arc in clear, practical terms
-- identify where uncertainty is highest in each stage
-- understand how computational and experimental loops reinforce each other
-- translate a broad mission into measurable stage objectives
+Explain the full discovery-to-development arc in clear, practical terms. Identify where uncertainty is highest in each stage. Understand how computational and experimental loops reinforce each other. Translate a broad mission into measurable stage objectives.
 
 ## Story Thread
 
@@ -26,9 +23,7 @@ Drug discovery is an optimization problem with incomplete information.
 
 You do not know in advance:
 
-- whether your target is truly causal for disease
-- whether your chemistry can satisfy potency, safety, exposure, and manufacturability together
-- whether preclinical effects will translate to human outcomes
+Whether your target is truly causal for disease. Whether your chemistry can satisfy potency, safety, exposure, and manufacturability together. Whether preclinical effects will translate to human outcomes.
 
 So the real job is not "prove success quickly."
 The real job is to run disciplined loops that reduce uncertainty with high signal quality.
@@ -83,17 +78,13 @@ A realistic platform must reduce all five, not only optimize one model metric.
 | Developability | scalable, stable product | may force redesign of otherwise potent molecules |
 | Clinical operability | feasible enrollment and endpoint capture | may constrain pure statistical ideal designs |
 
-Textbook lesson: there is no free lunch; good decisions are tradeoff decisions with transparent rationale.
+Textbook lesson: there is no free lunch. Good decisions are tradeoff decisions with transparent rationale.
 
 ## 1.6 Discovery As A System, Not A Script
 
 A robust discovery stack separates concerns:
 
-- planning intelligence: what to do next (`ClawCures`)
-- typed execution: how to run tools safely (`refua-mcp`)
-- scientific inference: folding, affinity, design (`refua`)
-- lifecycle modules: data, wet-lab, preclinical, clinical workflows
-- quality and governance: benchmark and evidence checks
+Planning intelligence: what to do next (`ClawCures`). Typed execution: how to run tools safely (`refua-mcp`). Scientific inference: folding, affinity, design (`refua`). Lifecycle modules: data, wet-lab, preclinical, clinical workflows. Quality and governance: benchmark and evidence checks.
 
 This separation improves correctness, auditability, and team velocity.
 
@@ -111,9 +102,7 @@ graph TD
 
 Practical implication:
 
-- fail early with strong evidence
-- avoid over-investing in weak programs
-- keep artifacts reproducible so rework is efficient
+Fail early with strong evidence. Avoid over-investing in weak programs. Keep artifacts reproducible so rework is efficient.
 
 ## 1.8 Metrics That Matter Early
 
@@ -121,26 +110,15 @@ Early-stage metrics should be both scientific and operational.
 
 Scientific:
 
-- binding/activity trend quality
-- ADMET liability trend
-- preclinical PK/safety plausibility
-- trial operating characteristic plausibility
+Binding/activity trend quality. ADMET liability trend. Preclinical PK/safety plausibility. Trial operating characteristic plausibility.
 
 Operational:
 
-- schema validity of tool calls
-- reproducibility of outputs
-- benchmark gate status
-- completeness of lineage and checklist artifacts
+Schema validity of tool calls. Reproducibility of outputs. Benchmark gate status. Completeness of lineage and checklist artifacts.
 
 ## 1.9 Common Beginner Misconceptions
 
-- "A high predicted affinity means candidate success."
-  - reality: affinity is one signal, not the full decision basis.
-- "If one assay looks good, we can advance."
-  - reality: orthogonal evidence reduces false positives.
-- "Governance can wait until late stage."
-  - reality: late governance gaps are expensive and risky.
+"A high predicted affinity means candidate success." Reality: affinity is one signal, not the full decision basis. "If one assay looks good, we can advance." Reality: orthogonal evidence reduces false positives. "Governance can wait until late stage." Reality: late governance gaps are expensive and risky.
 
 ## 1.10 Practical Workflow For New Teams
 
@@ -154,11 +132,7 @@ This approach builds organizational muscle faster than trying to optimize everyt
 
 ## Key Takeaways
 
-- Drug discovery is a looped decision system, not a single experiment or model run.
-- Most failures come from compounding risks across biology, chemistry, translation, and execution quality.
-- Strong teams optimize across multiple constraints instead of chasing one headline metric.
-- Architecture and process quality directly influence scientific reliability.
-- Early-stage discipline in artifacts and gates prevents expensive late-stage confusion.
+Drug discovery is a looped decision system, not a single experiment or model run. Most failures come from compounding risks across biology, chemistry, translation, and execution quality. Strong teams optimize across multiple constraints instead of chasing one headline metric. Architecture and process quality directly influence scientific reliability. Early-stage discipline in artifacts and gates prevents expensive late-stage confusion.
 
 ## Quick Review Questions
 
@@ -184,12 +158,8 @@ They rerun a smaller loop with explicit artifacts and gate criteria.
 
 If you can answer these, you are ready for Chapter 2:
 
-- What are the highest uncertainty points in your current stage?
-- Which tradeoff are you currently optimizing, and which are you ignoring?
-- Which artifacts would you need to justify your next stage-gate decision?
+What are the highest uncertainty points in your current stage? Which tradeoff are you currently optimizing, and which are you ignoring? Which artifacts would you need to justify your next stage-gate decision?
 
 ## 1.12 Continue Reading
 
-- architecture and system boundaries: [Chapter 2](./chapter-02-platform-architecture.md)
-- deeper medicinal chemistry strategy: [Chapter 9](./chapter-09-medicinal-chemistry-and-molecular-optimization.md)
-- discovery-to-development stage science: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md)
+Architecture and system boundaries: [Chapter 2](./chapter-02-platform-architecture.md). Deeper medicinal chemistry strategy: [Chapter 9](./chapter-09-medicinal-chemistry-and-molecular-optimization.md). Discovery-to-development stage science: [Chapter 10](./chapter-10-drug-discovery-and-development-science.md).

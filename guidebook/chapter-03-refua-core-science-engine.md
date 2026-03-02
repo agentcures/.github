@@ -9,10 +9,7 @@ The emphasis is on interpreting outputs as decision-support signals within large
 
 By the end of this chapter, you should be able to:
 
-- explain the Refua object model and workflow style
-- choose between fold, affinity, and design-oriented paths
-- interpret outputs in a decision-support context
-- integrate Refua outputs into broader campaign loops
+Explain the Refua object model and workflow style. Choose between fold, affinity, and design-oriented paths. Interpret outputs in a decision-support context. Integrate Refua outputs into broader campaign loops.
 
 ## Story Thread
 
@@ -25,10 +22,7 @@ The goal is not just running models, but turning outputs into reliable next acti
 `refua` is the scientific inference core for this ecosystem.
 It unifies:
 
-- structure modeling workflows
-- affinity-oriented evaluation paths
-- generative binder design workflows
-- property-level analysis for proteins and small molecules
+Structure modeling workflows. Affinity-oriented evaluation paths. Generative binder design workflows. Property-level analysis for proteins and small molecules.
 
 The design goal is to keep scientific workflows composable, typed, and in memory.
 
@@ -79,10 +73,7 @@ flowchart LR
 
 A unified API removes glue-code friction:
 
-- fewer ad hoc file transforms
-- fewer schema mismatch bugs
-- easier iterative loops inside notebooks and services
-- easier integration with `refua-mcp`
+Fewer ad hoc file transforms. Fewer schema mismatch bugs. Easier iterative loops inside notebooks and services. Easier integration with `refua-mcp`.
 
 This is a major practical advantage over fragmented scripts.
 
@@ -92,9 +83,7 @@ Refua outputs are evidence signals, not standalone truth.
 
 Treat them as inputs to multi-signal decision making.
 
-- strong structural confidence does not guarantee clinical efficacy
-- promising affinity signal does not erase ADMET risk
-- property scores need context and trend analysis, not one-off thresholds
+Strong structural confidence does not guarantee clinical efficacy. Promising affinity signal does not erase ADMET risk. Property scores need context and trend analysis, not one-off thresholds.
 
 ## 3.7 Property Layers
 
@@ -102,13 +91,11 @@ Refua supports rapid property extraction for triage.
 
 Molecule-oriented examples:
 
-- molecular descriptors
-- optional model-based ADMET profile path
+Molecular descriptors and optional model-based ADMET profile path.
 
 Protein-oriented examples:
 
-- length, isoelectric point, hydropathy-related descriptors
-- liability-oriented heuristic properties
+Length, isoelectric point, hydropathy-related descriptors and liability-oriented heuristic properties.
 
 These help prioritize what to evaluate deeply next.
 
@@ -116,9 +103,7 @@ These help prioritize what to evaluate deeply next.
 
 Constraint support helps encode domain knowledge:
 
-- pocket/contact constraints
-- template-informed structure contexts
-- binder specification patterns
+Pocket/contact constraints. Template-informed structure contexts. Binder specification patterns.
 
 This is useful when naive unconstrained generation drifts away from biological plausibility.
 
@@ -133,21 +118,15 @@ result = Complex([target, ligand], name="kras_demo").request_affinity().fold()
 print(result.affinity.ic50)
 ```
 
-The key idea is not syntax; the key idea is keeping an explicit and reproducible spec for each run.
+The key idea is not syntax. The key idea is keeping an explicit and reproducible spec for each run.
 
 ## 3.10 Performance And Operational Considerations
 
-- keep model instances alive for repeated evaluations where possible
-- use async mode through MCP for long-running workloads
-- avoid overusing exploratory runs in expensive compute environments
-- capture run metadata at invocation time for later governance
+Keep model instances alive for repeated evaluations where possible. Use async mode through MCP for long-running workloads. Avoid overusing exploratory runs in expensive compute environments. Capture run metadata at invocation time for later governance.
 
 ## 3.11 Common Mistakes
 
-- treating single-run outputs as final ranking authority
-- skipping spec validation before expensive runs
-- mixing entity IDs inconsistently across chained calls
-- failing to preserve intermediate artifacts that explain final decisions
+Treating single-run outputs as final ranking authority. Skipping spec validation before expensive runs. Mixing entity IDs inconsistently across chained calls. Failing to preserve intermediate artifacts that explain final decisions.
 
 ## 3.12 Refua In The Full Stack
 
@@ -160,11 +139,7 @@ That division lets teams improve model science without destabilizing orchestrati
 
 ## Key Takeaways
 
-- `refua` unifies structural, affinity, design, and property workflows under one API model.
-- Composable, in-memory workflows reduce glue-code fragility.
-- Output interpretation should always include uncertainty and downstream constraints.
-- Constraint-aware specs help align model execution with biological context.
-- Reproducibility depends on explicit run specs and artifact retention.
+`refua` unifies structural, affinity, design, and property workflows under one API model. Composable, in-memory workflows reduce glue-code fragility. Output interpretation should always include uncertainty and downstream constraints. Constraint-aware specs help align model execution with biological context. Reproducibility depends on explicit run specs and artifact retention.
 
 ## Quick Review Questions
 
@@ -188,11 +163,8 @@ That division lets teams improve model science without destabilizing orchestrati
 
 You are ready for Chapter 4 if you can answer:
 
-- when would you run fold vs affinity-only?
-- what additional signals do you need beyond one affinity output?
-- how would you keep run specs reproducible in team workflows?
+When would you run fold vs affinity-only? What additional signals do you need beyond one affinity output? How would you keep run specs reproducible in team workflows?
 
 ## 3.14 Continue Reading
 
-- campaign orchestration and policy loops: [Chapter 4](./chapter-04-clawcures-campaign-orchestrator.md)
-- lifecycle integration across packages: [Chapter 5](./chapter-05-program-lifecycle-modules.md)
+Campaign orchestration and policy loops: [Chapter 4](./chapter-04-clawcures-campaign-orchestrator.md) and lifecycle integration across packages: [Chapter 5](./chapter-05-program-lifecycle-modules.md).

@@ -9,10 +9,7 @@ It includes runbook patterns for readiness checks, incident isolation, and secur
 
 By the end of this chapter, you should be able to:
 
-- choose the right deployment mode for your team and risk profile
-- understand how runtime topology impacts reliability and security
-- apply practical runbook patterns for healthy operations
-- avoid common deployment anti-patterns in scientific platforms
+Choose the right deployment mode for your team and risk profile. Understand how runtime topology impacts reliability and security. Apply practical runbook patterns for healthy operations. Avoid common deployment anti-patterns in scientific platforms.
 
 ## Story Thread
 
@@ -25,12 +22,9 @@ The focus is operational clarity: run readiness, failure isolation, and secure d
 If runtime is unstable, scientific outputs become less trustworthy.
 Operations quality affects:
 
-- reproducibility
-- latency and throughput
-- failure recovery
-- audit readiness
+Reproducibility. Latency and throughput. Failure recovery. Audit readiness.
 
-So deployment is not separate from science; it is part of scientific execution quality.
+So deployment is not separate from science. It is part of scientific execution quality.
 
 ## 7.2 Supported Modes
 
@@ -57,10 +51,7 @@ Start simple, validate workflows, then scale infrastructure.
 `refua-deploy` helps generate validated deployment bundles.
 Typical outputs include:
 
-- config templates
-- rendered runtime manifests/scripts
-- bootstrap artifacts
-- optional ecosystem install scripts
+Config templates. Rendered runtime manifests/scripts. Bootstrap artifacts. Optional ecosystem install scripts.
 
 This reduces environment-specific manual drift.
 
@@ -78,19 +69,13 @@ flowchart LR
 
 Key runtime dependencies:
 
-- OpenClaw endpoint connectivity
-- tool runtime dependencies for MCP
-- data/artifact storage paths
-- optional GPU resources for model performance
+OpenClaw endpoint connectivity. Tool runtime dependencies for MCP. Data/artifact storage paths. Optional GPU resources for model performance.
 
 ## 7.6 Environment and Secrets Discipline
 
 Minimum baseline:
 
-- separate non-prod and prod credentials
-- store tokens in secret mechanisms, not plain source files
-- rotate tokens on schedule
-- restrict service exposure with allowed hosts/origins where applicable
+Separate non-prod and prod credentials. Store tokens in secret mechanisms, not plain source files. Rotate tokens on schedule. Restrict service exposure with allowed hosts/origins where applicable.
 
 ## 7.7 Reliability Runbook Basics
 
@@ -112,11 +97,7 @@ During incidents:
 
 Track at least:
 
-- request and job counts by status
-- validation error rates
-- median and tail latencies per tool family
-- cancellation and timeout rates
-- gate pass/fail trends over releases
+Request and job counts by status. Validation error rates. Median and tail latencies per tool family. Cancellation and timeout rates. Gate pass/fail trends over releases.
 
 These metrics make reliability issues visible before they become outages.
 
@@ -124,17 +105,11 @@ These metrics make reliability issues visible before they become outages.
 
 Recommended minimum posture:
 
-- run services behind trusted ingress/gateway
-- centralize authn/authz policy where feasible
-- separate artifact storage permissions by environment
-- preserve immutable evidence bundles for key stage decisions
+Run services behind trusted ingress/gateway. Centralize authn/authz policy where feasible. Separate artifact storage permissions by environment. Preserve immutable evidence bundles for key stage decisions.
 
 ## 7.10 Common Deployment Mistakes
 
-- launching with production-like objectives before smoke validation
-- mixing development and production artifact paths
-- enabling broad network exposure by default
-- ignoring graceful shutdown and cancellation behavior
+Launching with production-like objectives before smoke validation. Mixing development and production artifact paths. Enabling broad network exposure by default. Ignoring graceful shutdown and cancellation behavior.
 
 These mistakes create noisy failures and hard-to-debug data integrity issues.
 
@@ -150,11 +125,7 @@ These mistakes create noisy failures and hard-to-debug data integrity issues.
 
 ## Key Takeaways
 
-- Runtime reliability is a prerequisite for trustworthy scientific outputs.
-- Deployment mode should match team scale and governance requirements.
-- Pre-run checks and incident isolation reduce costly downtime.
-- Security posture must be designed into topology, secrets, and boundaries.
-- Observability should track both technical and workflow-level signals.
+Runtime reliability is a prerequisite for trustworthy scientific outputs. Deployment mode should match team scale and governance requirements. Pre-run checks and incident isolation reduce costly downtime. Security posture must be designed into topology, secrets, and boundaries. Observability should track both technical and workflow-level signals.
 
 ## Quick Review Questions
 
@@ -178,11 +149,8 @@ These mistakes create noisy failures and hard-to-debug data integrity issues.
 
 You are ready for Chapter 8 if you can answer:
 
-- which deployment mode fits your current team stage
-- what operational checks you run before campaign execution
-- how you isolate incidents by architecture layer
+Which deployment mode fits your current team stage. What operational checks you run before campaign execution. How you isolate incidents by architecture layer.
 
 ## 7.13 Continue Reading
 
-- applied end-to-end workflow: [Chapter 8](./chapter-08-end-to-end-walkthrough.md)
-- governance requirements at stage transitions: [Chapter 6](./chapter-06-quality-governance-and-evidence.md)
+Applied end-to-end workflow: [Chapter 8](./chapter-08-end-to-end-walkthrough.md) and governance requirements at stage transitions: [Chapter 6](./chapter-06-quality-governance-and-evidence.md).
