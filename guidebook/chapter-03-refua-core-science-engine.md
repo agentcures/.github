@@ -133,7 +133,7 @@ Treating single-run outputs as final ranking authority. Skipping spec validation
 `refua` is the engine.
 `ClawCures` is the planner/orchestrator.
 `refua-mcp` is the typed interface and execution guardrail.
-`refua-studio` is the operational command center.
+`clawcures-ui` is the operational command center.
 
 That division lets teams improve model science without destabilizing orchestration and governance layers.
 

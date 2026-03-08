@@ -21,7 +21,7 @@ AgentCures builds an integrated stack for planning, simulation, model inference,
 
 ```mermaid
 flowchart TD
-    S[refua-studio] --> C[ClawCures]
+    S[clawcures-ui] --> C[ClawCures]
     C --> M[refua-mcp]
     M --> R[refua]
     R --> N[refua-notebook]
@@ -47,7 +47,7 @@ flowchart TD
 | [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | Campaign orchestration agent | OpenClaw planning, autonomous loops, policy checks, portfolio ranking |
 | [`agentcures/refua`](https://github.com/agentcures/refua) | Core drug discovery ML toolkit | Boltz2 fold/affinity, BoltzGen design, unified Python API |
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | Typed MCP server for Refua tools | Structured tool contracts, fold/design/affinity, optional clinical and preclinical extras |
-| [`agentcures/refua-studio`](https://github.com/agentcures/refua-studio) | Web control plane | Mission planning, job telemetry, trial and evidence workflows |
+| [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | Web control plane | Mission planning, job telemetry, trial and evidence workflows |
 | [`agentcures/refua-data`](https://github.com/agentcures/refua-data) | Data layer | Curated catalogs, API ingestion, local caching, parquet materialization |
 | [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | Preclinical operations | GLP study planning, in vivo scheduling, bioanalysis pipelines |
 | [`agentcures/refua-wetlab`](https://github.com/agentcures/refua-wetlab) | Wet lab operations | Experiment orchestration, assay tracking, sample lifecycle coordination |
@@ -64,7 +64,7 @@ flowchart TD
 | [`agentcures/refua`](https://github.com/agentcures/refua) | ![Stars](https://img.shields.io/github/stars/agentcures/refua?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua?style=flat-square) |
 | [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | ![Stars](https://img.shields.io/github/stars/agentcures/ClawCures?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/ClawCures?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/ClawCures?style=flat-square) |
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-mcp?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-mcp?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-mcp?style=flat-square) |
-| [`agentcures/refua-studio`](https://github.com/agentcures/refua-studio) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-studio?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-studio?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-studio?style=flat-square) |
+| [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | ![Stars](https://img.shields.io/github/stars/agentcures/clawcures-ui?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/clawcures-ui?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/clawcures-ui?style=flat-square) |
 | [`agentcures/refua-data`](https://github.com/agentcures/refua-data) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-data?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-data?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-data?style=flat-square) |
 | [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-preclinical?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-preclinical?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-preclinical?style=flat-square) |
 | [`agentcures/refua-wetlab`](https://github.com/agentcures/refua-wetlab) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-wetlab?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-wetlab?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-wetlab?style=flat-square) |
@@ -76,7 +76,7 @@ flowchart TD
 
 ## End-to-End Program Flow
 
-1. Define mission intent in `refua-studio` or `ClawCures`.
+1. Define mission intent in `clawcures-ui` or `ClawCures`.
 2. Build candidate evidence through `refua`, `refua-mcp`, and `refua-data`.
 3. Simulate wet lab, preclinical, and clinical strategy with `refua-wetlab`, `refua-preclinical`, and `refua-clinical`.
 4. Gate quality with `refua-bench`.

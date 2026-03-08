@@ -40,7 +40,7 @@ Teams loop backward whenever gate outcomes indicate risk.
 | `refua` | fold, affinity, design, property analysis | structure outputs, affinity metrics, property payloads |
 | `refua-mcp` | typed tool interface + validation | structured tool results, async job IDs |
 | `ClawCures` | planning, policy, campaign orchestration | plan JSON, campaign run artifact, rankings |
-| `refua-studio` | command center and workflow API | job records, run dashboards, orchestration logs |
+| `clawcures-ui` | command center and workflow API | job records, run dashboards, orchestration logs |
 | `refua-wetlab` | protocol compile/run and LMS | run lineage, sample/inventory records |
 | `refua-preclinical` | planning, scheduling, bioanalysis, CMC | workups, plans, schedule and release assessments |
 | `refua-clinical` | trial simulation and optimization | run summaries, protocol options, VOI reports |
@@ -62,7 +62,7 @@ Good hand-offs are explicit and machine-readable.
 
 ## 5.4 Studio As Integration Fabric
 
-`refua-studio` is where teams coordinate lifecycle operations in one place.
+`clawcures-ui` is where teams coordinate lifecycle operations in one place.
 It unifies:
 
 Campaign planning/execution. Data catalog operations. Wet-lab workflows. Preclinical and clinical workflows. Benchmarking and evidence bundling.

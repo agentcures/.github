@@ -41,7 +41,7 @@ flowchart LR
 
 Minimum services:
 
-OpenClaw gateway. `refua-mcp`. Optional `refua-studio` for command-center workflows.
+OpenClaw gateway. `refua-mcp`. Optional `clawcures-ui` for command-center workflows.
 
 Checklist before first run:
 

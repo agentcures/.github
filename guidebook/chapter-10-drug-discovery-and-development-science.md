@@ -103,7 +103,7 @@ Reference map: [development_stage_gates.csv](./data/development_stage_gates.csv)
 
 | Task | Module Support |
 | --- | --- |
-| campaign objective and plan loops | `ClawCures`, `refua-studio` |
+| campaign objective and plan loops | `ClawCures`, `clawcures-ui` |
 | structural and affinity evidence | `refua`, `refua-mcp` |
 | preclinical and CMC planning | `refua-preclinical` |
 | clinical simulation and protocol optimization | `refua-clinical` |

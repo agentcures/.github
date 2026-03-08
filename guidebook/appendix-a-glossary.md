@@ -76,7 +76,7 @@ This glossary uses practical, workflow-oriented definitions.
 ## R
 
 - Refua: Core scientific toolkit for structure, affinity, design, and properties.
-- Refua Studio: Web command center coordinating campaign and lifecycle operations.
+- ClawCures UI: Web command center coordinating campaign and lifecycle operations.
 - Regression gate: Benchmark step that blocks releases when unacceptable performance drift is detected.
 
 ## S
@@ -93,4 +93,3 @@ This glossary uses practical, workflow-oriented definitions.
 ## V
 
 - VOI: Value of information; expected decision improvement from collecting additional data.
-

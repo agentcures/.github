@@ -59,7 +59,7 @@ This reduces environment-specific manual drift.
 
 ```mermaid
 flowchart LR
-    A[Operator] --> B[refua-studio]
+    A[Operator] --> B[clawcures-ui]
     B --> C[ClawCures]
     C --> D[refua-mcp]
     D --> E[Science modules]

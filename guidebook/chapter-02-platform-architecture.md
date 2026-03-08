@@ -38,13 +38,13 @@ flowchart TD
 
 Concrete mapping:
 
-Control layer: `ClawCures`, `refua-studio`. Execution layer: `refua-mcp`. Science modules: `refua`, `refua-data`, `refua-wetlab`, `refua-preclinical`, `refua-clinical`. Quality/governance: `refua-bench`, `refua-regulatory`. Runtime packaging: `refua-deploy`.
+Control layer: `ClawCures`, `clawcures-ui`. Execution layer: `refua-mcp`. Science modules: `refua`, `refua-data`, `refua-wetlab`, `refua-preclinical`, `refua-clinical`. Quality/governance: `refua-bench`, `refua-regulatory`. Runtime packaging: `refua-deploy`.
 
 ## 2.3 Topology Diagram
 
 ```mermaid
 flowchart LR
-    U[User] --> S[refua-studio]
+    U[User] --> S[clawcures-ui]
     U --> C[ClawCures CLI]
 
     S --> C
@@ -69,7 +69,7 @@ flowchart LR
 
 | Plane | Components | Primary Responsibility |
 | --- | --- | --- |
-| Mission/control | `ClawCures`, `refua-studio` | objective handling, plan orchestration, policy constraints |
+| Mission/control | `ClawCures`, `clawcures-ui` | objective handling, plan orchestration, policy constraints |
 | Typed execution | `refua-mcp` | schema validation, tool dispatch, async job contracts |
 | Scientific execution | `refua` and lifecycle modules | model inference, simulation, operational analysis |
 | Quality/governance | `refua-bench`, `refua-regulatory` | regression control, lineage, integrity verification |
@@ -80,7 +80,7 @@ flowchart LR
 ```mermaid
 sequenceDiagram
     participant Team
-    participant Studio as refua-studio
+    participant Studio as clawcures-ui
     participant Orchestrator as ClawCures
     participant Planner as OpenClaw
     participant MCP as refua-mcp
