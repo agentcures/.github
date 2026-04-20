@@ -6,7 +6,7 @@
 
 <a href="https://www.agentcures.com"><img alt="Website" src="https://img.shields.io/badge/website-agentcures.com-0A0A0A?style=for-the-badge"></a>
 <a href="https://github.com/agentcures"><img alt="GitHub Organization" src="https://img.shields.io/badge/github-agentcures-1F6FEB?style=for-the-badge"></a>
-<a href="https://github.com/agentcures?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-13-238636?style=for-the-badge"></a>
+<a href="https://github.com/agentcures?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-14-238636?style=for-the-badge"></a>
 <a href="https://github.com/agentcures/refua"><img alt="Core Toolkit" src="https://img.shields.io/badge/core-refua-BD561D?style=for-the-badge"></a>
 
 </div>
@@ -45,6 +45,7 @@ flowchart TD
 | Repository | Purpose | Key Features |
 | --- | --- | --- |
 | [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | Campaign orchestration agent | OpenClaw planning, autonomous loops, policy checks, portfolio ranking |
+| [`agentcures/NanoCures`](https://github.com/agentcures/NanoCures) | NanoClaw-native disease discovery agent | Container-isolated execution, per-group sessions, sender allowlists, translational workflow skills |
 | [`agentcures/refua`](https://github.com/agentcures/refua) | Core drug discovery ML toolkit | Boltz2 fold/affinity, BoltzGen design, unified Python API |
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | Typed MCP server for Refua tools | Structured tool contracts, fold/design/affinity, optional clinical and preclinical extras |
 | [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | Web control plane | Mission planning, job telemetry, trial and evidence workflows |
@@ -63,6 +64,7 @@ flowchart TD
 | --- | --- |
 | [`agentcures/refua`](https://github.com/agentcures/refua) | ![Stars](https://img.shields.io/github/stars/agentcures/refua?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua?style=flat-square) |
 | [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | ![Stars](https://img.shields.io/github/stars/agentcures/ClawCures?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/ClawCures?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/ClawCures?style=flat-square) |
+| [`agentcures/NanoCures`](https://github.com/agentcures/NanoCures) | ![Stars](https://img.shields.io/github/stars/agentcures/NanoCures?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/NanoCures?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/NanoCures?style=flat-square) |
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-mcp?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-mcp?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-mcp?style=flat-square) |
 | [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | ![Stars](https://img.shields.io/github/stars/agentcures/clawcures-ui?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/clawcures-ui?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/clawcures-ui?style=flat-square) |
 | [`agentcures/refua-data`](https://github.com/agentcures/refua-data) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-data?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-data?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-data?style=flat-square) |
