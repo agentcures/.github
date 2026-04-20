@@ -44,8 +44,8 @@ flowchart TD
 
 | Repository | Purpose | Key Features |
 | --- | --- | --- |
-| [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | Campaign orchestration agent | OpenClaw planning, autonomous loops, policy checks, portfolio ranking |
-| [`agentcures/NanoCures`](https://github.com/agentcures/NanoCures) | NanoClaw-native disease discovery agent | Container-isolated execution, per-group sessions, sender allowlists, translational workflow skills |
+| [`agentcures/ClawCures`](https://github.com/agentcures/ClawCures) | Drug disovery agent (OpenClaw based) | OpenClaw planning, autonomous loops, policy checks, portfolio ranking |
+| [`agentcures/NanoCures`](https://github.com/agentcures/NanoCures) | Drug discovery agent (NanoClaw based) | Container-isolated execution, per-group sessions, sender allowlists, translational workflow skills |
 | [`agentcures/refua`](https://github.com/agentcures/refua) | Core drug discovery ML toolkit | Boltz2 fold/affinity, BoltzGen design, unified Python API |
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | Typed MCP server for Refua tools | Structured tool contracts, fold/design/affinity, optional clinical and preclinical extras |
 | [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | Web control plane | Mission planning, job telemetry, trial and evidence workflows |
