@@ -44,6 +44,7 @@ Teams loop backward whenever gate outcomes indicate risk.
 | `refua-wetlab` | protocol compile/run and LMS | run lineage, sample/inventory records |
 | `refua-preclinical` | planning, scheduling, bioanalysis, CMC | workups, plans, schedule and release assessments |
 | `refua-clinical` | trial simulation and optimization | run summaries, protocol options, VOI reports |
+| `refua-schema` | portfolio composition and schema reuse | portfolio YAML/JSON, disease/rationale/drug objects, nested cross-module artifacts |
 | `refua-bench` | regression and benchmark gates | compare reports, pass/fail decisions |
 | `refua-regulatory` | evidence bundle build and verify | manifest, lineage graph, checksums, checklist output |
 | `refua-deploy` | deployment and runtime packaging | manifests/scripts/env templates |
@@ -56,6 +57,7 @@ Good hand-offs are explicit and machine-readable.
 | --- | --- | --- |
 | `refua-data` manifest | `refua-regulatory` | immutable source and checksum metadata |
 | `refua` outputs | `ClawCures` ranking and `refua-clinical` integration | stable field names and units/context |
+| lifecycle module outputs | `refua-schema` portfolio artifacts | canonical `Portfolio -> Disease -> Rationale -> Drug` hierarchy with reusable nested objects |
 | wet-lab run lineage | governance review | complete run IDs and event timestamps |
 | preclinical outputs | clinical strategy and stage-gate review | clear assumptions and uncertainty fields |
 | benchmark reports | release decisions | threshold definitions and statistical context |

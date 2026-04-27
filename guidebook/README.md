@@ -66,6 +66,7 @@ flowchart TD
     M --> W[refua-wetlab]
     M --> P[refua-preclinical]
     M --> L[refua-clinical]
+    C --> H[refua-schema Portfolio Model]
     C --> S[clawcures-ui]
     S --> B[refua-bench]
     S --> G[refua-regulatory]

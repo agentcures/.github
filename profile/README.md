@@ -6,7 +6,7 @@
 
 <a href="https://www.agentcures.com"><img alt="Website" src="https://img.shields.io/badge/website-agentcures.com-0A0A0A?style=for-the-badge"></a>
 <a href="https://github.com/agentcures"><img alt="GitHub Organization" src="https://img.shields.io/badge/github-agentcures-1F6FEB?style=for-the-badge"></a>
-<a href="https://github.com/agentcures?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-14-238636?style=for-the-badge"></a>
+<a href="https://github.com/agentcures?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-15-238636?style=for-the-badge"></a>
 <a href="https://github.com/agentcures/refua"><img alt="Core Toolkit" src="https://img.shields.io/badge/core-refua-BD561D?style=for-the-badge"></a>
 
 </div>
@@ -29,6 +29,7 @@ flowchart TD
     C --> P[refua-preclinical]
     C --> W[refua-wetlab]
     C --> L[refua-clinical]
+    C --> H[refua-schema]
     C --> G[refua-regulatory]
     C --> B[refua-bench]
     S --> G
@@ -53,6 +54,7 @@ flowchart TD
 | [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | Preclinical operations | GLP study planning, in vivo scheduling, bioanalysis pipelines |
 | [`agentcures/refua-wetlab`](https://github.com/agentcures/refua-wetlab) | Wet lab operations | Experiment orchestration, assay tracking, sample lifecycle coordination |
 | [`agentcures/refua-clinical`](https://github.com/agentcures/refua-clinical) | Clinical simulation | PK/PD virtual patients, adaptive trial simulation, protocol optimization |
+| [`agentcures/refua-schema`](https://github.com/agentcures/refua-schema) | Portfolio object model | `Portfolio -> Disease -> Rationale -> Drug` hierarchy, reused Refua objects, JSON/YAML round-tripping |
 | [`agentcures/refua-regulatory`](https://github.com/agentcures/refua-regulatory) | Regulatory evidence and audit | Decision lineage, signed bundles, checklist gates |
 | [`agentcures/refua-bench`](https://github.com/agentcures/refua-bench) | Benchmarking and regression gates | Statistical comparisons, provenance capture, baseline promotion |
 | [`agentcures/refua-notebook`](https://github.com/agentcures/refua-notebook) | Notebook visualization layer | Rich IPython and Jupyter rendering for Refua objects |
@@ -71,6 +73,7 @@ flowchart TD
 | [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-preclinical?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-preclinical?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-preclinical?style=flat-square) |
 | [`agentcures/refua-wetlab`](https://github.com/agentcures/refua-wetlab) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-wetlab?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-wetlab?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-wetlab?style=flat-square) |
 | [`agentcures/refua-clinical`](https://github.com/agentcures/refua-clinical) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-clinical?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-clinical?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-clinical?style=flat-square) |
+| [`agentcures/refua-schema`](https://github.com/agentcures/refua-schema) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-schema?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-schema?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-schema?style=flat-square) |
 | [`agentcures/refua-regulatory`](https://github.com/agentcures/refua-regulatory) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-regulatory?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-regulatory?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-regulatory?style=flat-square) |
 | [`agentcures/refua-bench`](https://github.com/agentcures/refua-bench) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-bench?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-bench?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-bench?style=flat-square) |
 | [`agentcures/refua-notebook`](https://github.com/agentcures/refua-notebook) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-notebook?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-notebook?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-notebook?style=flat-square) |
@@ -79,7 +82,7 @@ flowchart TD
 ## End-to-End Program Flow
 
 1. Define mission intent in `clawcures-ui` or `ClawCures`.
-2. Build candidate evidence through `refua`, `refua-mcp`, and `refua-data`.
+2. Build candidate evidence and portfolio objects through `refua`, `refua-mcp`, `refua-data`, and `refua-schema`.
 3. Simulate wet lab, preclinical, and clinical strategy with `refua-wetlab`, `refua-preclinical`, and `refua-clinical`.
 4. Gate quality with `refua-bench`.
 5. Package traceable evidence with `refua-regulatory`.
