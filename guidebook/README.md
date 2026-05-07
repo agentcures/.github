@@ -63,6 +63,7 @@ flowchart TD
     C --> M[refua-mcp Typed Tools]
     M --> R[refua Modeling]
     M --> D[refua-data]
+    D --> T[tox21full]
     M --> W[refua-wetlab]
     M --> P[refua-preclinical]
     M --> L[refua-clinical]

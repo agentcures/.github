@@ -37,6 +37,7 @@ Teams loop backward whenever gate outcomes indicate risk.
 | Module | Primary Scope | Typical Artifacts |
 | --- | --- | --- |
 | `refua-data` | dataset catalog, fetch, materialization | raw cache, metadata, parquet manifests |
+| `tox21full` | Tox21 toxicity dataset generation | PubChem BioAssay extraction outputs, multi-task assay matrices, dataset manifests |
 | `refua` | fold, affinity, design, property analysis | structure outputs, affinity metrics, property payloads |
 | `refua-mcp` | typed tool interface + validation | structured tool results, async job IDs |
 | `ClawCures` | planning, policy, campaign orchestration | plan JSON, campaign run artifact, rankings |

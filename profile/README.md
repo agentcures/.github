@@ -32,6 +32,7 @@ flowchart TD
     C --> H[refua-schema]
     C --> G[refua-regulatory]
     C --> B[refua-bench]
+    D --> T[tox21full]
     S --> G
     S --> L
     S --> P
@@ -51,6 +52,7 @@ flowchart TD
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | Typed MCP server for Refua tools | Structured tool contracts, fold/design/affinity, optional clinical and preclinical extras |
 | [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | Web control plane | Mission planning, job telemetry, trial and evidence workflows |
 | [`agentcures/refua-data`](https://github.com/agentcures/refua-data) | Data layer | Curated catalogs, API ingestion, local caching, parquet materialization |
+| [`agentcures/tox21full`](https://github.com/agentcures/tox21full) | Toxicity dataset generation | Full Tox21 multi-task dataset generation from public PubChem BioAssay records |
 | [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | Preclinical operations | GLP study planning, in vivo scheduling, bioanalysis pipelines |
 | [`agentcures/refua-wetlab`](https://github.com/agentcures/refua-wetlab) | Wet lab operations | Experiment orchestration, assay tracking, sample lifecycle coordination |
 | [`agentcures/refua-clinical`](https://github.com/agentcures/refua-clinical) | Clinical simulation | PK/PD virtual patients, adaptive trial simulation, protocol optimization |
@@ -70,6 +72,7 @@ flowchart TD
 | [`agentcures/refua-mcp`](https://github.com/agentcures/refua-mcp) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-mcp?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-mcp?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-mcp?style=flat-square) |
 | [`agentcures/clawcures-ui`](https://github.com/agentcures/clawcures-ui) | ![Stars](https://img.shields.io/github/stars/agentcures/clawcures-ui?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/clawcures-ui?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/clawcures-ui?style=flat-square) |
 | [`agentcures/refua-data`](https://github.com/agentcures/refua-data) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-data?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-data?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-data?style=flat-square) |
+| [`agentcures/tox21full`](https://github.com/agentcures/tox21full) | ![Stars](https://img.shields.io/github/stars/agentcures/tox21full?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/tox21full?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/tox21full?style=flat-square) |
 | [`agentcures/refua-preclinical`](https://github.com/agentcures/refua-preclinical) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-preclinical?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-preclinical?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-preclinical?style=flat-square) |
 | [`agentcures/refua-wetlab`](https://github.com/agentcures/refua-wetlab) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-wetlab?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-wetlab?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-wetlab?style=flat-square) |
 | [`agentcures/refua-clinical`](https://github.com/agentcures/refua-clinical) | ![Stars](https://img.shields.io/github/stars/agentcures/refua-clinical?style=flat-square&logo=github) ![Last Commit](https://img.shields.io/github/last-commit/agentcures/refua-clinical?style=flat-square) ![Open Issues](https://img.shields.io/github/issues/agentcures/refua-clinical?style=flat-square) |
@@ -82,7 +85,7 @@ flowchart TD
 ## End-to-End Program Flow
 
 1. Define mission intent in `clawcures-ui` or `ClawCures`.
-2. Build candidate evidence and portfolio objects through `refua`, `refua-mcp`, `refua-data`, and `refua-schema`.
+2. Build candidate evidence and portfolio objects through `refua`, `refua-mcp`, `refua-data`, `tox21full`, and `refua-schema`.
 3. Simulate wet lab, preclinical, and clinical strategy with `refua-wetlab`, `refua-preclinical`, and `refua-clinical`.
 4. Gate quality with `refua-bench`.
 5. Package traceable evidence with `refua-regulatory`.

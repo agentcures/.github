@@ -38,7 +38,7 @@ flowchart TD
 
 Concrete mapping:
 
-Control layer: `ClawCures`, `clawcures-ui`. Execution layer: `refua-mcp`. Science modules: `refua`, `refua-data`, `refua-wetlab`, `refua-preclinical`, `refua-clinical`. Portfolio/object model: `refua-schema`. Quality/governance: `refua-bench`, `refua-regulatory`. Runtime packaging: `refua-deploy`.
+Control layer: `ClawCures`, `clawcures-ui`. Execution layer: `refua-mcp`. Science modules: `refua`, `refua-data`, `tox21full`, `refua-wetlab`, `refua-preclinical`, `refua-clinical`. Portfolio/object model: `refua-schema`. Quality/governance: `refua-bench`, `refua-regulatory`. Runtime packaging: `refua-deploy`.
 
 ## 2.3 Topology Diagram
 
@@ -53,6 +53,7 @@ flowchart LR
 
     M --> R[refua]
     M --> D[refua-data]
+    D --> T[tox21full]
     M --> W[refua-wetlab]
     M --> P[refua-preclinical]
     M --> L[refua-clinical]
@@ -72,7 +73,7 @@ flowchart LR
 | --- | --- | --- |
 | Mission/control | `ClawCures`, `clawcures-ui` | objective handling, plan orchestration, policy constraints |
 | Typed execution | `refua-mcp` | schema validation, tool dispatch, async job contracts |
-| Scientific execution | `refua` and lifecycle modules | model inference, simulation, operational analysis |
+| Scientific execution | `refua` and lifecycle/data modules | model inference, simulation, dataset generation, operational analysis |
 | Portfolio/object model | `refua-schema` | portfolio composition, reusable discovery objects, serialized artifact contracts |
 | Quality/governance | `refua-bench`, `refua-regulatory` | regression control, lineage, integrity verification |
 | Runtime/deploy | `refua-deploy` | environment bootstrap, bundle render, operations portability |
